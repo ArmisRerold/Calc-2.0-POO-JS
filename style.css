@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculadora {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.859);
+  display: grid;
+  grid-template-columns: 8fr;
+  grid-template-rows: 2fr 10fr;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+}
+#visor {
+  background-color: #cccccc;
+  grid-row: 1;
+  grid-column: 1/-1;
+  border-radius: 3px;
+  padding: 5px 10px;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+}
+#visor #resultado {
+  color: green;
+}
+#teclado {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-row: 2fr 2fr 2fr 2fr 2fr;
+  gap: 5px;
+}
+.tecla {
+  border-radius: 5px;
+  border: none;
+  background-color: #d4d4d4;
+  opacity: 0.6;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+#expressao,
+#resultado {
+  text-align: right;
+  letter-spacing: 6px;
+}
+
+.tecla:hover {
+  opacity: 1;
+}
